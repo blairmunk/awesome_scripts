@@ -1,7 +1,7 @@
 #!/bin/bash
 # Automated Notesnook Self-Hosted Server Installation
-# Version: 2.3 (Fixed SSL check + English translation)
-# Based on guide: https://sh.itjust.works/post/13411056
+# Based on guide: https://lemmy.world/post/24509570
+
 
 set -e
 
