@@ -21,7 +21,7 @@ This script automates the complete setup of a self-hosted Notesnook synchronizat
 
 ```bash
 # Download and run the installer
-curl -fsSL https://raw.githubusercontent.com/yourusername/notesnook-installer/main/install-notesnook.sh -o install-notesnook.sh
+curl -fsSL https://raw.githubusercontent.com/blairmunk/awesome_scripts/refs/heads/main/notesnook-install/install-notesnook.sh -o install-notesnook.sh
 chmod +x install-notesnook.sh
 ./install-notesnook.sh
 ```
