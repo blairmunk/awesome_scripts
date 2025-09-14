@@ -85,7 +85,7 @@ check_os() {
         . /etc/os-release
         OS=$NAME
         if [[ "$ID" != "ubuntu" && "$ID_LIKE" != "*ubuntu*" && "$ID" != "debian" && "$ID_LIKE" != "*debian*" ]]; then
-            print_warning "Script tested on Ubuntu/Debian. On $OS there might be issues."
+            print_warning "Script tested on Ubuntu24 Server. On $OS there might be issues."
             read -p "Continue? (y/N): " -n 1 -r
             echo
             if [[ ! $REPLY =~ ^[Yy]$ ]]; then
@@ -159,7 +159,7 @@ collect_config() {
     
     # Main domain input
     while true; do
-        ask_input "Enter your main domain (e.g., keepsolve.ru): " DOMAIN
+        ask_input "Enter your main domain (e.g., your-domain.com): " DOMAIN
         if validate_domain "$DOMAIN"; then
             break
         else
@@ -541,7 +541,7 @@ download_web_app() {
 
         <div class="instructions">
             <h3>📱 Client Setup:</h3>
-            <div class="step">Open Notesnook app (web or mobile)</div>
+            <div class="step">Open Notesnook app (web, desktop or mobile)</div>
             <div class="step">Go to Settings → Sync Server</div>
             <div class="step">Enter URL: <strong>https://notes.$DOMAIN</strong></div>
             <div class="step">Create a new account or sign in to existing one</div>
