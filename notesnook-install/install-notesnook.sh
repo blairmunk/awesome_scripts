@@ -2,7 +2,6 @@
 # Automated Notesnook Self-Hosted Server Installation
 # Based on guide: https://lemmy.world/post/24509570
 
-
 set -e
 
 # Colors for output
