@@ -225,7 +225,8 @@ collect_config() {
         fi
     done
     
-    ask_input "SMTP password: " SMTP_PASSWORD "true" "true"
+    print_warning "SMTP password will be visible for accuracy - ensure privacy!"
+    ask_input "SMTP password (app password): " SMTP_PASSWORD "" "false"
     ask_input "SMTP host [smtp.gmail.com]: " SMTP_HOST "smtp.gmail.com"
     ask_input "SMTP port [587]: " SMTP_PORT "587"
     

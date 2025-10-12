@@ -82,7 +82,7 @@ The script will configure UFW firewall, but ensure your cloud provider/hosting a
 ### Step 1: Download and Execute
 
 ```bash
-wget https://github.com/blairmunk/awesome_scripts/blob/main/notesnook-install/install-notesnook.sh
+wget https://raw.githubusercontent.com/blairmunk/awesome_scripts/main/notesnook-install/install-notesnook-fixed.sh
 chmod +x install-notesnook.sh
 ./install-notesnook.sh
 ```
